@@ -28,7 +28,7 @@ function saveFile(body, fileName) {
     } else {
       console.log('Media saved!')
       const explain = body.explanation.split(".")[0];
-      const descriptionText = body.title + '\n' + '\n'+ explain + '\n' + '\n' + " #NASA #space"
+      const descriptionText = body.title + '\n' + '\n'+ explain +"." + '\n' + '\n' + " #NASA #space"
       uploadMedia(descriptionText, fileName)
     }
   })
